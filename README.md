@@ -1,6 +1,6 @@
-## Client Frontend for our blog-api project: https://qa7680-blog-api-client.netlify.app
-This is the react client frontend for our blog-api project. It uses our blog-api(https://powerful-sands-70177.herokuapp.com/api/posts) to fetch data and
-display sends it to our frontend(client).
+## Client Frontend for the blog-api project: https://qa7680-blog-api-client.netlify.app
+This is the react client frontend for our blog-api project. It uses the blog-api(https://powerful-sands-70177.herokuapp.com/api/posts) to fetch data and
+sends it to our frontend(https://qa7680-blog-api-client.netlify.app/).
 
 # Getting Started with Create React App
 
