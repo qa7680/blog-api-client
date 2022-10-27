@@ -12,14 +12,14 @@ const BlogPost = () => {
     
     //fetch single post using url param
     useEffect(() => {
-        fetch(`https://powerful-sands-70177.herokuapp.com/api/posts/${postId}`, {mode: 'cors', method: 'GET'})
+        fetch(`https://qa7680-blog-api.onrender.com/api/posts/${postId}`, {mode: 'cors', method: 'GET'})
             .then(res => res.json())
             .then(data => setPost(data.post[0]));
     }, []);
 
     //fetch single post comments
     useEffect(() => {
-        fetch(`https://powerful-sands-70177.herokuapp.com/api/posts/${postId}/comments`, {mode: 'cors', method: 'GET'})
+        fetch(`https://qa7680-blog-api.onrender.com/api/posts/${postId}/comments`, {mode: 'cors', method: 'GET'})
             .then(res => res.json())
             .then(data => setComments(data.comments.map(comment => {
                 return {...comment, time: DateTime.fromISO(comment.time).setLocale('en').toFormat('ff')}
@@ -28,7 +28,7 @@ const BlogPost = () => {
 
     function addComment(e){
         e.preventDefault();
-        fetch(`https://powerful-sands-70177.herokuapp.com/api/posts/${postId}/comments`,
+        fetch(`https://qa7680-blog-api.onrender.com/api/posts/${postId}/comments`,
         {mode:'cors', method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({
             comment: commentField,
             username: usernameField

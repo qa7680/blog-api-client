@@ -15,7 +15,7 @@ const Homepage = () => {
     //fetch all posts
     useEffect(() => {
         setIsLoading(true);
-        fetch('https://powerful-sands-70177.herokuapp.com/api/posts', {mode:'cors', method:'GET'})
+        fetch('https://qa7680-blog-api.onrender.com/api/posts', {mode:'cors', method:'GET'})
             .then(res => res.json())
             .then(data => {
                 setPosts(data.all_posts.map(post => {
