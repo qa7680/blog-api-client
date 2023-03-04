@@ -1,7 +1,3 @@
-## Client Frontend for the blog-api project: https://qa7680-blog-api-client.netlify.app
-This is the react client frontend for our blog-api project. It uses the blog-api(https://powerful-sands-70177.herokuapp.com/api/posts) to fetch data and
-sends it to our frontend(https://qa7680-blog-api-client.netlify.app/). Bootstrap and react-bootstrap were used as CSS frameworks for styling.
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
